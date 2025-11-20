@@ -1,0 +1,72 @@
+#ifndef ARRAY_H
+#define ARRAY_H
+
+#include <iostream>
+
+/*
+ * Заголовочный файл: Array.h
+ * Демонстрирует создание класса динамического массива
+ * 
+ * КОНЦЕПЦИИ:
+ * - Управление динамической памятью
+ * - Конструктор копирования
+ * - Оператор присваивания
+ * - Перегрузка операторов
+ */
+
+class Array {
+private:
+    int* data;        // Указатель на данные
+    int size;         // Размер массива
+    int capacity;     // Вместимость (выделенная память)
+    
+    // Приватный метод для увеличения вместимости
+    void resize(int newCapacity);
+    
+public:
+    // Конструкторы
+    Array();                          // Конструктор по умолчанию
+    Array(int initialSize);           // Конструктор с размером
+    Array(const Array& other);        // Конструктор копирования
+    
+    // Деструктор
+    ~Array();
+    
+    // Оператор присваивания
+    Array& operator=(const Array& other);
+    
+    // Доступ к элементам
+    int& operator[](int index);              // Для изменения
+    const int& operator[](int index) const;  // Для чтения
+    
+    // Методы работы с массивом
+    void push_back(int value);    // Добавить в конец
+    void pop_back();              // Удалить последний
+    void insert(int index, int value);  // Вставить по индексу
+    void remove(int index);       // Удалить по индексу
+    void clear();                 // Очистить массив
+    
+    // Геттеры
+    int getSize() const;
+    int getCapacity() const;
+    bool isEmpty() const;
+    
+    // Поиск и сортировка
+    int find(int value) const;    // Найти элемент
+    void sort();                  // Сортировка
+    void reverse();               // Реверс
+    
+    // Статистика
+    int sum() const;              // Сумма элементов
+    double average() const;       // Среднее значение
+    int min() const;              // Минимум
+    int max() const;              // Максимум
+    
+    // Вывод
+    void print() const;
+    
+    // Дружественная функция для вывода
+    friend std::ostream& operator<<(std::ostream& os, const Array& arr);
+};
+
+#endif // ARRAY_H

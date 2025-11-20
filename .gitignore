@@ -1,0 +1,69 @@
+# Исполняемые файлы
+*.exe
+*.out
+*.app
+
+# Объектные файлы
+*.o
+*.obj
+*.lo
+*.slo
+
+# Скомпилированные библиотеки
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Файлы компилятора
+*.d
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Build директории
+build/
+Build/
+BUILD/
+cmake-build-*/
+out/
+
+# IDE файлы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Временные файлы
+*.tmp
+*.temp
+*.log
+*.bak
+*.cache
+
+# Тестовые файлы
+test_*.cpp
+test_*.exe
+test_compile.*
+error.txt
+
+# Специфичные для проекта
+*.user
+*.suo
+*.ncb
+*.aps
+*.positions
+*.layout
