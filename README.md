@@ -24,14 +24,22 @@
 
 ## 📸 Скриншоты
 
-### Главное меню
-![Главное меню](https://via.placeholder.com/600x400?text=Главное+меню)
-
-### Компиляция урока
-![Компиляция](https://via.placeholder.com/600x400?text=Компиляция+урока)
-
-### Игра "Крестики-нолики"
-![Игра](https://via.placeholder.com/600x400?text=Крестики-нолики)
+<table>
+<tr>
+<td width="33%" align="center">
+<h3>Главное меню</h3>
+<img src="https://via.placeholder.com/400x300?text=Главное+меню" alt="Главное меню" width="100%">
+</td>
+<td width="33%" align="center">
+<h3>Компиляция урока</h3>
+<img src="https://via.placeholder.com/400x300?text=Компиляция+урока" alt="Компиляция" width="100%">
+</td>
+<td width="33%" align="center">
+<h3>Игра "Крестики-нолики"</h3>
+<img src="https://via.placeholder.com/400x300?text=Крестики-нолики" alt="Игра" width="100%">
+</td>
+</tr>
+</table>
 
 ---
 
