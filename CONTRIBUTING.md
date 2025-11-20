@@ -6,7 +6,7 @@
 
 ### 🐛 Нашли ошибку?
 
-1. Проверьте, нет ли уже [Issue](https://github.com/your-repo/issues) по этой проблеме
+1. Проверьте, нет ли уже [Issue](https://github.com/Artemon0/Full-Cpp-Course-RUS/issues) по этой проблеме
 2. Создайте новый Issue с описанием:
    - Что не работает
    - Как воспроизвести

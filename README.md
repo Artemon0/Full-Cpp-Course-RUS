@@ -3,8 +3,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Language: C++](https://img.shields.io/badge/Language-C++-blue.svg)](https://isocpp.org/)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](https://www.microsoft.com/windows)
+[![GitHub stars](https://img.shields.io/github/stars/Artemon0/Full-Cpp-Course-RUS?style=social)](https://github.com/Artemon0/Full-Cpp-Course-RUS/stargazers)
+[![Website](https://img.shields.io/badge/Website-Online-green.svg)](https://artemon0.github.io/Full-Cpp-Course-RUS/)
 
 Комплексный курс по изучению C++ с практическими примерами и консольными играми.
+
+🌐 **[Сайт курса](https://artemon0.github.io/Full-Cpp-Course-RUS/)** | 📚 **[Документация](https://github.com/Artemon0/Full-Cpp-Course-RUS)** | 🐛 **[Issues](https://github.com/Artemon0/Full-Cpp-Course-RUS/issues)**
 
 **Особенности:**
 - ✅ Все комментарии на русском языке
@@ -213,9 +217,10 @@ MIT License - см. файл [LICENSE](LICENSE)
 
 Нашли ошибку или хотите улучшить курс? 
 
-- 🐛 [Создайте Issue](https://github.com/your-username/Full-Cpp-Course-RUS/issues)
-- 🔧 [Отправьте Pull Request](https://github.com/your-username/Full-Cpp-Course-RUS/pulls)
+- 🐛 [Создайте Issue](https://github.com/Artemon0/Full-Cpp-Course-RUS/issues)
+- 🔧 [Отправьте Pull Request](https://github.com/Artemon0/Full-Cpp-Course-RUS/pulls)
 - 📖 Читайте [CONTRIBUTING.md](CONTRIBUTING.md)
+- 🌐 Посетите [сайт курса](https://artemon0.github.io/Full-Cpp-Course-RUS/)
 
 ## ⭐ Поддержите проект
 
