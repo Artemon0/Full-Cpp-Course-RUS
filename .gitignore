@@ -67,3 +67,15 @@ error.txt
 *.aps
 *.positions
 *.layout
+
+# Документы для релиза (не коммитим)
+RELEASE_NOTES.txt
+release_description.md
+
+# Локальные заметки
+notes.txt
+TODO.txt
+.notes/
+RELEASE_CHECKLIST.md
+# Релизы
+RELEASE*.md
