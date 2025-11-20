@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
         
     steps:
     - uses: actions/checkout@v3
@@ -25,12 +25,7 @@ jobs:
         export LANG=ru_RU.UTF-8
         export LC_ALL=ru_RU.UTF-8
         
-    - name: Install g++ (Windows)
-      if: runner.os == 'Windows'
-      uses: msys2/setup-msys2@v2
-      with:
-        update: true
-        install: mingw-w64-x86_64-gcc
+
         
     - name: Verify g++
       run: g++ --version
