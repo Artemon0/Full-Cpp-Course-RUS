@@ -1,36 +1,41 @@
-#include <iostream>
 #include "math.h"
+#include <iostream>
+
+#ifdef _WIN32
 #include <windows.h>
+#endif
 
 using namespace std;
 
 /*
  * Главный файл программы
  * Использует функции из модуля математика
- * 
+ *
  * КОМПИЛЯЦИЯ:
  * g++ main.cpp math.cpp -o calculator
- * 
+ *
  * ЗАПУСК:
  * ./calculator (Linux/Mac)
  * calculator.exe (Windows)
  */
 
 int main() {
-    // Установка кодировки UTF-8 для корректного отображения русского текста
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
+  // Установка кодировки UTF-8 для корректного отображения русского текста
+#ifdef _WIN32
+  SetConsoleOutputCP(CP_UTF8);
+  SetConsoleCP(CP_UTF8);
+#endif
 
-    cout << "=== КАЛЬКУЛЯТОР ===" << endl;
-    
-    int a = 10, b = 5;
-    
-    cout << "\nЧисла: a = " << a << ", b = " << b << endl;
-    cout << "Сложение: " << add(a, b) << endl;
-    cout << "Вычитание: " << subtract(a, b) << endl;
-    cout << "Умножение: " << multiply(a, b) << endl;
-    cout << "Деление: " << divide(a, b) << endl;
-    cout << "Степень (2^3): " << power(2, 3) << endl;
-    
-    return 0;
+  cout << "=== КАЛЬКУЛЯТОР ===" << endl;
+
+  int a = 10, b = 5;
+
+  cout << "\nЧисла: a = " << a << ", b = " << b << endl;
+  cout << "Сложение: " << add(a, b) << endl;
+  cout << "Вычитание: " << subtract(a, b) << endl;
+  cout << "Умножение: " << multiply(a, b) << endl;
+  cout << "Деление: " << divide(a, b) << endl;
+  cout << "Степень (2^3): " << power(2, 3) << endl;
+
+  return 0;
 }
