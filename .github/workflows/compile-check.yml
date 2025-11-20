@@ -34,61 +34,61 @@ jobs:
       
     - name: Compile Basics
       run: |
-        g++ "01_Основы/01_hello_world.cpp" -o test1
-        g++ "01_Основы/02_переменные.cpp" -o test2
-        g++ "01_Основы/03_операторы.cpp" -o test3
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "01_Основы/01_hello_world.cpp" -o test1
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "01_Основы/02_переменные.cpp" -o test2
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "01_Основы/03_операторы.cpp" -o test3
         
     - name: Compile Control Structures
       run: |
-        g++ "02_Управляющие_конструкции/01_if_else.cpp" -o test4
-        g++ "02_Управляющие_конструкции/02_циклы.cpp" -o test5
-        g++ "02_Управляющие_конструкции/03_switch.cpp" -o test6
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "02_Управляющие_конструкции/01_if_else.cpp" -o test4
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "02_Управляющие_конструкции/02_циклы.cpp" -o test5
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "02_Управляющие_конструкции/03_switch.cpp" -o test6
         
     - name: Compile Functions
       run: |
-        g++ "03_Функции/01_основы_функций.cpp" -o test7
-        g++ "03_Функции/02_перегрузка_функций.cpp" -o test8
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "03_Функции/01_основы_функций.cpp" -o test7
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "03_Функции/02_перегрузка_функций.cpp" -o test8
         
     - name: Compile Arrays
       run: |
-        g++ "04_Массивы_и_строки/01_массивы.cpp" -o test9
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "04_Массивы_и_строки/01_массивы.cpp" -o test9
         
     - name: Compile Pointers
       run: |
-        g++ "05_Указатели_и_ссылки/01_указатели.cpp" -o test10
-        g++ "05_Указатели_и_ссылки/02_ссылки.cpp" -o test11
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "05_Указатели_и_ссылки/01_указатели.cpp" -o test10
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "05_Указатели_и_ссылки/02_ссылки.cpp" -o test11
         
     - name: Compile OOP
       run: |
-        g++ "06_ООП/01_классы_и_объекты.cpp" -o test12
-        g++ "06_ООП/02_наследование.cpp" -o test13
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "06_ООП/01_классы_и_объекты.cpp" -o test12
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "06_ООП/02_наследование.cpp" -o test13
         
     - name: Compile STL
       run: |
-        g++ -std=c++11 "07_STL/01_vector.cpp" -o test14
-        g++ -std=c++11 "07_STL/02_string.cpp" -o test15
-        g++ -std=c++11 "07_STL/03_map.cpp" -o test16
+        g++ -std=c++11 -finput-charset=UTF-8 -fexec-charset=UTF-8 "07_STL/01_vector.cpp" -o test14
+        g++ -std=c++11 -finput-charset=UTF-8 -fexec-charset=UTF-8 "07_STL/02_string.cpp" -o test15
+        g++ -std=c++11 -finput-charset=UTF-8 -fexec-charset=UTF-8 "07_STL/03_map.cpp" -o test16
         
     - name: Compile Files
       run: |
-        g++ "08_Файлы/01_чтение_и_запись.cpp" -o test17
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "08_Файлы/01_чтение_и_запись.cpp" -o test17
         
     - name: Compile Advanced
       run: |
-        g++ -std=c++11 "09_Продвинутые_темы/01_шаблоны.cpp" -o test18
-        g++ "09_Продвинутые_темы/02_исключения.cpp" -o test19
+        g++ -std=c++11 -finput-charset=UTF-8 -fexec-charset=UTF-8 "09_Продвинутые_темы/01_шаблоны.cpp" -o test18
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "09_Продвинутые_темы/02_исключения.cpp" -o test19
         
     - name: Compile Games
       run: |
-        g++ "Игры/01_Угадай_число/game.cpp" -o game1
-        g++ "Игры/02_Камень_ножницы_бумага/game.cpp" -o game2
-        g++ "Игры/03_Виселица/game.cpp" -o game3
-        g++ "Игры/04_Крестики_нолики/game.cpp" -o game4
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "Игры/01_Угадай_число/game.cpp" -o game1
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "Игры/02_Камень_ножницы_бумага/game.cpp" -o game2
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "Игры/03_Виселица/game.cpp" -o game3
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "Игры/04_Крестики_нолики/game.cpp" -o game4
         
     - name: Compile Header Examples
       run: |
         cd "05_Указатели_и_ссылки/примеры_с_заголовками"
-        g++ main.cpp math.cpp -o example1
-        g++ main_student.cpp Student.cpp -o example2
-        g++ main_calculator.cpp Calculator.cpp -o example3
-        g++ main_array.cpp Array.cpp -o example4
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 main.cpp math.cpp -o example1
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 main_student.cpp Student.cpp -o example2
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 main_calculator.cpp Calculator.cpp -o example3
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 main_array.cpp Array.cpp -o example4
