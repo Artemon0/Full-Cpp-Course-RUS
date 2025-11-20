@@ -17,7 +17,7 @@ double divide(double a, double b) {
 }
 
 // Функция проверки возраста
-void проверитьВозраст(int age) {
+void checkAge(int age) {
     if (age < 0) {
         throw invalid_argument("Возраст не может быть отрицательным!");
     }
@@ -40,12 +40,12 @@ public:
     }
 };
 
-class Счет {
+class Account {
 private:
     double balance;
     
 public:
-    Счет(double initialBalance) : balance(initialBalance) {}
+    Account(double initialBalance) : balance(initialBalance) {}
     
     void withdraw(double sum) {
         if (sum < 0) {
@@ -82,8 +82,8 @@ int main() {
     // Множественные типы исключений
     cout << "\n=== МНОЖЕСТВЕННЫЕ ИСКЛЮЧЕНИЯ ===" << endl;
     try {
-        проверитьВозраст(25);
-        проверитьВозраст(-5);
+        checkAge(25);
+        checkAge(-5);
     }
     catch (const invalid_argument& e) {
         cout << "Неверный аргумент: " << e.what() << endl;
@@ -95,7 +95,7 @@ int main() {
     // Собственные исключения
     cout << "\n=== СОБСТВЕННЫЕ ИСКЛЮЧЕНИЯ ===" << endl;
     try {
-        Счет account(1000);
+        Account account(1000);
         cout << "Баланс: " << account.getBalance() << " руб." << endl;
         
         account.withdraw(500);

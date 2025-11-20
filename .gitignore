@@ -79,3 +79,7 @@ TODO.txt
 RELEASE_CHECKLIST.md
 # Релизы
 RELEASE*.md
+# Compiler
+output/
+*/output/
+*.exe

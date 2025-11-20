@@ -15,7 +15,7 @@ protected:
     int age;
     
 public:
-    Animal(string и, int в) : name(и), age(в) {}
+    Animal(string n, int a) : name(n), age(a) {}
     
     void showInfo() {
         cout << "Имя: " << name << ", Возраст: " << age << endl;
@@ -32,7 +32,7 @@ private:
     string breed;
     
 public:
-    Dog(string и, int в, string п) : Animal(и, в), breed(п) {}
+    Dog(string n, int a, string b) : Animal(n, a), breed(b) {}
     
     void makeSound() override {
         cout << name << " говорит: Гав-гав!" << endl;
@@ -49,7 +49,7 @@ private:
     bool isDomestic;
     
 public:
-    Cat(string и, int в, bool д) : Animal(и, в), isDomestic(д) {}
+    Cat(string n, int a, bool d) : Animal(n, a), isDomestic(d) {}
     
     void makeSound() override {
         cout << name << " говорит: Мяу!" << endl;
@@ -72,28 +72,28 @@ int main() {
     cout << "=== НАСЛЕДОВАНИЕ ===" << endl;
     
     // Создание объектов
-    Dog собака("Рекс", 3, "Немецкая овчарка");
-    Cat кошка("Мурка", 2, true);
+    Dog dog("Рекс", 3, "Немецкая овчарка");
+    Cat cat("Мурка", 2, true);
     
     // Использование методов базового класса
-    собака.showInfo();
-    собака.showBreed();
-    собака.makeSound();
+    dog.showInfo();
+    dog.showBreed();
+    dog.makeSound();
     
     cout << endl;
     
-    кошка.showInfo();
-    кошка.showType();
-    кошка.makeSound();
+    cat.showInfo();
+    cat.showType();
+    cat.makeSound();
     
     // Полиморфизм
     cout << "\n=== ПОЛИМОРФИЗМ ===" << endl;
-    Animal* животные[2];
-    животные[0] = &собака;
-    животные[1] = &кошка;
+    Animal* animals[2];
+    animals[0] = &dog;
+    animals[1] = &cat;
     
     for (int i = 0; i < 2; i++) {
-        животные[i]->makeSound();
+        animals[i]->makeSound();
     }
     
     return 0;

@@ -15,7 +15,7 @@ T maximum(T a, T b) {
 
 // Шаблон функции с несколькими параметрами
 template <typename T>
-void swap(T& a, T& b) {
+void swapValues(T& a, T& b) {
     T temp = a;
     a = b;
     b = temp;
@@ -29,7 +29,7 @@ private:
     T second;
     
 public:
-    Pair(T п, T в) : first(п), second(в) {}
+    Pair(T f, T s) : first(f), second(s) {}
     
     T getFirst() { return first; }
     T getSecond() { return second; }
@@ -47,7 +47,7 @@ private:
     T2 value;
     
 public:
-    KeyValue(T1 к, T2 з) : key(к), value(з) {}
+    KeyValue(T1 k, T2 v) : key(k), value(v) {}
     
     void show() {
         cout << key << " => " << value << endl;
@@ -69,7 +69,7 @@ int main() {
     cout << "\n=== ОБМЕН ЗНАЧЕНИЙ ===" << endl;
     int x = 100, y = 200;
     cout << "До обмена: x = " << x << ", y = " << y << endl;
-    swap(x, y);
+    swapValues(x, y);
     cout << "После обмена: x = " << x << ", y = " << y << endl;
     
     // Использование шаблона класса
