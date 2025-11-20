@@ -21,6 +21,9 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y g++
+        sudo locale-gen ru_RU.UTF-8
+        export LANG=ru_RU.UTF-8
+        export LC_ALL=ru_RU.UTF-8
         
     - name: Install g++ (Windows)
       if: runner.os == 'Windows'
@@ -32,11 +35,21 @@ jobs:
     - name: Verify g++
       run: g++ --version
       
+    - name: Check files
+      run: |
+        echo "Checking if files exist..."
+        ls -la "01_Основы/" || echo "Directory not found"
+        ls -la "01_Основы/01_hello_world.cpp" || echo "File not found"
+      
     - name: Compile Basics
       run: |
-        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "01_Основы/01_hello_world.cpp" -o test1
-        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "01_Основы/02_переменные.cpp" -o test2
-        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "01_Основы/03_операторы.cpp" -o test3
+        echo "Compiling 01_hello_world.cpp..."
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "01_Основы/01_hello_world.cpp" -o test1 || echo "FAILED: 01_hello_world.cpp"
+        echo "Compiling 02_переменные.cpp..."
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "01_Основы/02_переменные.cpp" -o test2 || echo "FAILED: 02_переменные.cpp"
+        echo "Compiling 03_операторы.cpp..."
+        g++ -finput-charset=UTF-8 -fexec-charset=UTF-8 "01_Основы/03_операторы.cpp" -o test3 || echo "FAILED: 03_операторы.cpp"
+        echo "Basics compilation completed"
         
     - name: Compile Control Structures
       run: |
