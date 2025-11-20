@@ -6,9 +6,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/Artemon0/Full-Cpp-Course-RUS?style=social)](https://github.com/Artemon0/Full-Cpp-Course-RUS/stargazers)
 [![Website](https://img.shields.io/badge/Website-Online-green.svg)](https://artemon0.github.io/Full-Cpp-Course-RUS/)
 
+> **⚠️ ВНИМАНИЕ!** Курс создан нейросетью и может содержать ошибки. Писать [@Artemon0000](https://t.me/Artemon0000)
+
 Комплексный курс по изучению C++ с практическими примерами и консольными играми.
 
 🌐 **[Сайт курса](https://artemon0.github.io/Full-Cpp-Course-RUS/)** | 📚 **[Документация](https://github.com/Artemon0/Full-Cpp-Course-RUS)** | 🐛 **[Issues](https://github.com/Artemon0/Full-Cpp-Course-RUS/issues)**
+
+---
 
 **Особенности:**
 - ✅ Все комментарии на русском языке
@@ -245,3 +249,14 @@ MIT License - см. файл [LICENSE](LICENSE)
 **Удачи в изучении C++!** 🚀
 
 Made with ❤️ for Russian-speaking C++ learners
+
+---
+
+## 📞 Обратная связь
+
+**Нашли ошибку или есть предложения?**
+- 🐛 [Создайте Issue](https://github.com/Artemon0/Full-Cpp-Course-RUS/issues)
+- 💬 Telegram: [@Artemon0000](https://t.me/Artemon0000)
+- 🔧 [Pull Request](https://github.com/Artemon0/Full-Cpp-Course-RUS/pulls)
+
+Ваши исправления помогут улучшить курс для всех! 🙏
